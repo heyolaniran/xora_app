@@ -7,12 +7,14 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-     - 3000:3000
+     - 5173:5173
     develop:
       watch:
         - path: ./package.json
           action: rebuild
         - path: ./package-lock.json
+          action: rebuild
+        - path : ./yarn.lock
           action: rebuild
         - path: .
           target: /app 
