@@ -1,10 +1,10 @@
+import Header from "./components/Header";
 
 const App = () => {
-
   return (
-  <div>
-      <h1>React App</h1>
-    </div>)
-
-}
-export default App
+    <main className="container-fluid">
+      <Header />
+    </main>
+  );
+};
+export default App;
